@@ -1,5 +1,6 @@
 var spawn = require('child_process').spawn;
 var slang = require('slang');
+var WKHTMLTOPDF_BIN = process.env.WKHTMLTOPDF_PATH || 'wkhtmltopdf';
 
 function quote(val) {
   // escape and quote the value if it is a string and this isn't windows
@@ -87,5 +88,5 @@ function wkhtmltopdf(input, options, callback) {
   return stream;
 }
 
-wkhtmltopdf.command = 'wkhtmltopdf';
+wkhtmltopdf.command = WKHTMLTOPDF_BIN;
 module.exports = wkhtmltopdf;
