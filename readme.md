@@ -1,3 +1,7 @@
+### Why fork
+
+This fork enables use of wkhtmltopdf with local path. just export WKHTMLTOPDF_PATH to the local path of your binary.
+
 node-wkhtmltopdf
 ================
 
